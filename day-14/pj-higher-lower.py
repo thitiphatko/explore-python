@@ -1,7 +1,7 @@
 from art import logo, vs
 from game_data import data
 import random
-from replit import clear
+from wiper import wipe
 
 
 def format_data(account):
@@ -50,7 +50,7 @@ while game_should_continue:
 
     is_correct = check_answer(guess, a_follower_count, b_follower_count)
 
-    clear()
+    wipe
     print(logo)
 
     # Give player a feedback
@@ -60,4 +60,3 @@ while game_should_continue:
     else:
         game_should_continue = False
         print(f"Sorry, you got it wrong. Final score: {score}")
-
